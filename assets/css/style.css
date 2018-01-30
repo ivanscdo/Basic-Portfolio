@@ -1,3 +1,74 @@
-h1 {
-    color: teal;
+body {
+    background-image: url(../images/dust_scratches.png)
+}
+
+.headfont {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.midfont {
+    color: #4aaaa5;
+}
+
+header {
+    background-color: #ffffff;
+    overflow: auto;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.namebox {
+    float: left;
+    padding: 0px 25px 0px 25px;
+    background-color: #4aaaa5;
+    color: white;
+    margin-left: 160px;
+}
+
+.nav {
+    float: right;
+    width: 270px;
+    margin-top: 15px;
+    color: #777777;
+    margin-right: 160px;
+}
+
+.navA {
+    float: left;
+    width: 33.3%;
+}
+
+.navP {
+    float: left;
+    width: 33.3%;
+}
+
+.navC {
+    float: left;
+    width: 33.3%;
+}
+
+.mid {
+    overflow: auto;
+    clear: both;
+    margin: 0px 160px 20px 160px;
+}
+
+.about {
+    float: left;
+    background-color: #ffffff;
+    width: 67%;
+}
+
+.connect {
+    float: right;
+    background-color: #ffffff;
+    width: 28%;
+    margin: 0px 0px 20px 0px;
+}
+
+.footer {
+    background-color: #666666;
+    color: #ffffff;
+    padding: 25px 430px 25px 430px;
 }
