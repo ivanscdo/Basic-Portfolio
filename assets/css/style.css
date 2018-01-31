@@ -10,16 +10,16 @@ body {
 }
 
 
-/* font color for headings in middle section: About, Portfolio, Contact, Connect with Me */
-.midfont { 
-    color: #4aaaa5;
-    
+/* font for paragraphs in main section and navigation box */
+.allotherfont {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 
-/* font for paragraph in middle section and navigation box */
-.allotherfont {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+/* font color for headings in main section: About, Portfolio, Contact, Connect with Me */
+.fontcolor-main { 
+    color: #4aaaa5;
+    
 }
 
 
@@ -43,7 +43,7 @@ header {
 
 
 /* navigation box in header, top right */
-.nav { 
+nav { 
     float: right;
     width: 270px;
     margin: 15px 125px 0px 0px;
@@ -72,15 +72,15 @@ header {
 }
 
 
-/* entire middle section: About Me, Portfolio, Contact, Connect with Me*/
-.mid { 
+/* entire middle section: "About Me", "Portfolio", "Contact", "Connect with Me" */
+main { 
     overflow: auto;
     clear: both;
     margin: 0px 160px 20px 160px;
 }
 
 
-/* About Me section */
+/* "About Me" section */
 .about { 
     float: left;
     background-color: #ffffff;
@@ -88,43 +88,47 @@ header {
 }
 
 
-/* About Me heading*/
+/* "About Me" heading */
 h2 {
     margin: 20px;
 }
 
 
-/* horizontal rule in About Me and Connect with Me sections*/
+/* horizontal rule in "About Me" and "Connect with Me" sections */
 hr {
     margin: 0px 20px 0px 20px;
 }
 
 
-/*self portrait*/
+/* self portrait */
 .selfie {
     float: left;
     margin: 20px;
 }
 
 
-/* text in about me p tag */
+/* text in "About Me" p-tag */
 .aboutp {
     margin: 20px;
 }
 
 
-/* Connect with Me section */
-.connect { 
-    float: right;
+/* "Connect with Me" section */
+aside { 
     background-color: #ffffff;
     width: 28%;
+    float: right;
     margin: 0px 0px 20px 0px;
 }
 
 
-/*Connect with Me heading*/
+/* "Connect with Me" heading */
 h3 {
     margin: 20px;
+}
+
+.social {
+    margin: 20px 20px 20px 70px;
 }
 
 
@@ -139,7 +143,7 @@ h3 {
 
 
 /* grey bar across bottom */
-.footer { 
+footer { 
     background-color: #666666;
     color: #ffffff;
     padding: 25px 430px 25px 430px;
