@@ -26,16 +26,20 @@ body {
 /* white bar across top; includes name and navigation links */
 header { 
     background-color: #ffffff;
+    height: 90px;
     overflow: auto;
     clear: both;
     margin: -10px -10px 20px -10px;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 2px;
 }
 
 
 /* name in header, top left */
 .namebox { 
     float: left;
-    padding: 0px 25px 0px 25px;
+    padding: 12px 40px 12px 40px;
     background-color: #4aaaa5;
     color: white;
     margin-left: 160px;
@@ -80,11 +84,15 @@ main {
 }
 
 
-/* "About Me" section */
-.about { 
+/* style for "About Me", "Portfolio", "Contact" section */
+.APC { 
     float: left;
     background-color: #ffffff;
-    width: 67%;
+    /*width: 650px;*/
+    width: 68%;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
 }
 
 
@@ -116,9 +124,15 @@ hr {
 /* "Connect with Me" section */
 aside { 
     background-color: #ffffff;
+    height: 200px;
+    /*width: 270px;*/
     width: 28%;
     float: right;
     margin: 0px 0px 20px 0px;
+    padding-bottom: 20px;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
 }
 
 
@@ -128,7 +142,7 @@ h3 {
 }
 
 .social {
-    margin: 20px 20px 20px 70px;
+    margin-left: 40px;
 }
 
 
@@ -145,7 +159,8 @@ h3 {
 /* grey bar across bottom */
 footer { 
     background-color: #666666;
-    color: #ffffff;
+    color: #e6e8e9;
     padding: 25px 430px 25px 430px;
     margin: 0px -10px 0px -10px;
+    font-size: 12px;
 }
