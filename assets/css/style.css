@@ -1,6 +1,6 @@
 /* background image */
 body {
-    background-image: url(../images/dust_scratches.png)
+    background-image: url("../images/dust_scratches.png");
 }
 
 
@@ -10,7 +10,7 @@ body {
 }
 
 
-/* font for paragraphs in main section and navigation box */
+/* font for main and nav elements */
 .allotherfont {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
@@ -40,10 +40,15 @@ header {
 /* name in header, top left */
 .namebox { 
     float: left;
-    padding: 12px 40px 12px 40px;
+    padding: 0px 40px 12px 40px;
     background-color: #4aaaa5;
     color: white;
     margin-left: 160px;
+}
+
+
+h1 {
+    font-size: 30px;
 }
 
 
@@ -79,14 +84,14 @@ nav {
 
 /* entire middle section: "About Me", "Portfolio", "Contact", "Connect with Me" */
 main { 
-    overflow: auto;
-    clear: both;
     margin: 0px 160px 20px 160px;
 }
 
 
-/* style for "About Me", "Portfolio", "Contact" section */
+/* "About Me", "Portfolio", "Contact" section */
 .APC { 
+    overflow: auto;
+    clear: both;
     float: left;
     background-color: #ffffff;
     /*width: 650px;*/
@@ -94,31 +99,40 @@ main {
     border-color: #dddddd;
     border-style: solid;
     border-width: 1px;
+    position: relative;
+    right: 9px;
+    margin-bottom: 30px;
 }
 
 
 /* "About Me" heading */
 h2 {
     margin: 32px;
+    font-size: 30px;
 }
 
 
-/* horizontal rule in "About Me" and "Connect with Me" sections */
-hr {
-    margin: 0px 20px 0px 20px;
+/* horizontal rule in "About Me", "Portfolio", and "Contact" sections */
+hr.main{
+    margin: 0px 25px 0px 25px;
+    color: #dddddd;
+    background-color: #dddddd;
+    height: 3px;
+    border: 0;
 }
 
 
 /* self portrait */
 .selfie {
     float: left;
-    margin: 20px;
+    margin: 34px 25px 15px 25px;
 }
 
 
-/* text in "About Me" p-tag */
+/* text in "About Me" p-tags */
 .aboutp {
-    margin: 20px;
+    margin: 25px;
+    line-height: 2;
 }
 
 
@@ -137,19 +151,32 @@ aside {
 
 /* "Connect with Me" heading */
 h3 {
-    margin: 20px;
+    margin: 30px 0px 25px 30px;
 }
 
+/* horizontal rule in "Connect with Me" section */
+hr.aside {
+    margin: 0px 50px 0px 30px;
+    color: #f0f0f0;
+    background-color: #f0f0f0;
+    height: 2px;
+    border: 0;
+}
+
+
+/* github, linked in, stackoverflow section */
 .social {
     margin: 25px;
 }
 
+
+/* stackoverflow fix: image too large, reduced, moved up */
 .stack {
     margin-bottom: 3px;
 }
 
 
-/* strip above footer */
+/* teal strip above footer */
 .footervalance {
     clear: both;
     overflow: auto;
@@ -165,4 +192,12 @@ footer {
     padding: 25px 430px 25px 430px;
     margin: 0px -10px 0px -10px;
     font-size: 12px;
+}
+
+/* "Copyright 2018 Ivan Saucedo" */
+p.footer {
+    position: relative;
+    top: 50%;
+    left: 30%;
+    color: #c5c2bc;
 }

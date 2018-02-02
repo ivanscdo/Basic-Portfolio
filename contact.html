@@ -9,10 +9,12 @@
 
     <body>
         <header>
+            <!-- header left: teal box with name -->
             <section class="namebox">
                 <h1 class="headfont"> Ivan Saucedo </h1>
             </section>
-                
+            
+            <!-- header right: navigation box, "About", "Portfolio", "Contact" links -->
             <nav class="allotherfont">
                 <p class="navA">About</p> 
                 <p class="navP">Portfolio</p>
@@ -21,41 +23,43 @@
         </header>
 
         <main>
+            <!-- main section, left: "About Me", "Portfolio", "Contact" -->
             <section class="APC">
                 <h2 class="headfont fontcolor-main">Contact</h2>
-                <hr>
-                <h2>Contact</h2>
-        <form>
-            Name:<br>
-            <input type="text" name="fullname">
-            <br>
-            Email:<br>
-            <input type="text" name="email">
-            <br>
-            Message:<br>
-            <input type="text" name="message">
-            <br>
-            <button>Submit</button>
-        </form>
-                
+                <hr class="main">
+                <form>
+                        Name:<br>
+                        <input type="text" name="fullname">
+                        <br>
+                        Email:<br>
+                        <input type="text" name="email">
+                        <br>
+                        Message:<br>
+                        <input type="text" name="message">
+                        <br>
+                        <button>Submit</button>
+                </form>
+
             </section>
 
-            <aside>
+            <!-- main section, right: "Connect with Me" -->
+            <aside> 
                 <h3 class="headfont fontcolor-main">Connect with Me</h3>
-                <hr>
+                <hr class="aside">
                 <section class="social">
-                    <img src="assets/images/github.png" height="64" width="64" alt="github icon and link" />
-                    <img src="assets/images/linkedin.png" height="64" width="64" alt="linkedin icon and link" />
-                    <img src="assets/images/stackoverflow.png" height="58" width="58" alt="stackoverflow icon and link" />
+                    <img class="git" src="assets/images/github.png" height="64px" width="64px" alt="github icon and link" />
+                    <img class="linked" src="assets/images/linkedin.png" height="64px" width="64px" alt="linkedin icon and link" />
+                    <img class="stack" src="assets/images/stackoverflow.png" height="58px" width="58px" alt="stackoverflow icon and link" />
                 </section>
             </aside>
         </main> 
         
+        <!-- teal strip above footer -->
         <div class="footervalance"> 
         </div>
 
         <footer class="allotherfont">
-            <p>&copy;Copyright 2018 Ivan Saucedo</p>
+            <p class="footer">&copy;Copyright 2018 Ivan Saucedo</p>
         </footer>
 
     </body>
