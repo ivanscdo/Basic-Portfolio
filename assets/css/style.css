@@ -4,27 +4,43 @@ body {
 }
 
 
-/* font for all headings */
+/* font for all headings: namebox, About Me/Portfolio/Contact, and Connect with me */
 .headfont { 
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 
-/* font for main and nav elements */
+/* font for main and nav sections */
 .allotherfont {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
 
 
-/* font color for headings in main section: About, Portfolio, Contact, Connect with Me */
+/* font color for headings in main section: About Me/Portfolio/Contact, and Connect with Me */
 .fontcolor-main { 
     color: #4aaaa5;
-    
 }
 
 
-/* white bar across top; includes name and navigation links */
+/* font for text inside name and email sections in Contact */
+.form-font {
+    color: #dddddd;
+    font-size: 15px;
+    padding-left: 10px;
+    filter: opacity(50%);
+}
+
+.form-font:focus {
+    color: #777777;
+    font-size: 15px;
+    padding-left: 10px;
+    filter: opacity(100%);
+    border-color: #4aaaa5;
+}
+
+
+/* white bar across top; name and navigation links */
 header { 
     background-color: #ffffff;
     height: 90px;
@@ -47,6 +63,7 @@ header {
 }
 
 
+/* name */
 h1 {
     font-size: 30px;
 }
@@ -57,7 +74,14 @@ nav {
     float: right;
     width: 270px;
     margin: 15px 125px 0px 0px;
-    ;
+}
+
+
+/* vertical line in nav box; divides About & Portfolio, and Portfolio & Contact */
+p.navdivider {
+    float: left;
+    margin: 14px 0px 0px -15px;
+    filter: opacity(15%);
 }
 
 
@@ -65,13 +89,17 @@ nav {
 .navA { 
     float: left;
     width: 25%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
 
 
 /* Portfolio link in navbox  */
 .navP { 
     float: left;
-    width: 33.3%;
+    width: 32.3%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
 
 
@@ -79,16 +107,18 @@ nav {
 .navC { 
     float: left;
     width: 33.3%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
 
 
-/* entire middle section: "About Me", "Portfolio", "Contact", "Connect with Me" */
+/* entire middle section: About Me/Portfolio/Contact and Connect with Me */
 main { 
     margin: 0px 160px 20px 160px;
 }
 
 
-/* "About Me", "Portfolio", "Contact" section */
+/* About Me/Portfolio/Contact section */
 .APC { 
     overflow: auto;
     clear: both;
@@ -105,14 +135,14 @@ main {
 }
 
 
-/* "About Me" heading */
+/* heading for About Me/Portfolio/Contact */
 h2 {
     margin: 32px;
     font-size: 30px;
 }
 
 
-/* horizontal rule in "About Me", "Portfolio", and "Contact" sections */
+/* horizontal rule in About Me/Portfolio/Contact */
 hr.main{
     margin: 0px 25px 0px 25px;
     color: #dddddd;
@@ -122,21 +152,168 @@ hr.main{
 }
 
 
-/* self portrait */
+/* About Me - self portrait */
 .selfie {
     float: left;
     margin: 34px 25px 15px 25px;
 }
 
 
-/* text in "About Me" p-tags */
+/* About Me - text in p-tags */
 .aboutp {
     margin: 25px;
     line-height: 2;
 }
 
+/* PORTFOLIO -  PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO
+format text in image captions */
 
-/* "Connect with Me" section */
+/* captions: hangman, rpg, and trivia */
+p.x1.y3,
+p.x2.y3,
+p.x1.y2 {
+    background-color: #4aaaa5;
+    /* height: 60px; */
+    width: 185px;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 20px 0px 20px 90px;
+    margin: 0px;
+}
+
+/* captions: rutgers info widget and rock, paper, scissors */
+p.x2.y2,
+p.x1.y1 {
+    background-color: #4aaaa5;
+    /* height: 60px; */
+    width: 240px;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 20px 0px 20px 35px;
+}
+
+
+
+
+/* PORTFOLIO -  PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO
+images & captions: floats and clearfixes */
+
+/* images & captions in left column */
+img.x1.y3,
+img.x1.y2,
+img.x1.y1 {
+    float: left;
+}
+
+p.x1.y3,
+p.x1.y2,
+p.x1.y1 {
+    float: left;
+    clear:both;
+    overflow: auto;
+}
+
+
+/* images & captions in right column */
+img.x2.y3,
+img.x2.y2 {
+    float: right;
+}
+
+p.x2.y3,
+p.x2.y2 {
+    clear: both;
+    overflow: auto;
+    float: right;
+}
+
+
+/* PORTFOLIO -  PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO - PORTFOLIO
+images & captions: margins */
+
+/* hangman */
+img.x1.y3 {
+    margin: 40px 0px 0px 30px;
+}
+p.x1.y3 {
+    margin: -85px 0px 0px 30px;
+}
+
+/* rpg */
+img.x2.y3 {
+    margin: -200px 25px 0px 0px;
+}
+p.x2.y3 {
+    margin: -85px 25px 0px 0px;
+}
+
+/* trivia */
+img.x1.y2 {
+    margin: 30px 0px 0px 30px;
+}
+p.x1.y2 {
+    margin: -85px 0px 0px 30px;
+}
+
+/* rutgers info widget */
+img.x2.y2 {
+    margin: -200px 25px 0px 0px;
+}
+p.x2.y2 {
+    margin: -85px 25px 0px 0px;
+}
+
+/* rock paper scissors */
+img.x1.y1 {
+    margin: 25px 0px 30px 30px;
+}
+p.x1.y1 {
+    margin: -120px 0px 0px 30px;
+}
+
+
+
+/* Contact - entire form section: name, email, message */
+form {
+    margin: 25px;
+    color: 
+}
+
+
+/* name input section */
+.form-name {
+    height: 40px;
+    width: 575px;
+    margin: -10px 0px 10px 0px;
+}
+
+
+/* email input section */
+.form-email {
+    height: 40px;
+    width: 575px;
+    margin: -10px 0px 10px 0px;
+}
+
+/* message input section*/
+.form-message {
+    height: 200px;
+    width: 575px;
+    margin: -10px 0px 10px 0px;
+}
+
+/* Contact - button */
+.button {
+    background-color: #4aaaa5;
+    height: 40px;
+    width: 120px;
+    color: white;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+
+/* Connect with Me section, middle right */
 aside { 
     background-color: #ffffff;
     height: 200px;
@@ -149,14 +326,15 @@ aside {
 }
 
 
-/* "Connect with Me" heading */
+/* Connect with Me heading */
 h3 {
     margin: 30px 0px 25px 30px;
 }
 
-/* horizontal rule in "Connect with Me" section */
+
+/* horizontal rule in Connect with Me section */
 hr.aside {
-    margin: 0px 50px 0px 30px;
+    margin: 0px 34px 0px 28px;
     color: #f0f0f0;
     background-color: #f0f0f0;
     height: 2px;
@@ -164,13 +342,13 @@ hr.aside {
 }
 
 
-/* github, linked in, stackoverflow section */
+/* icons for github, linked in, stackoverflow */
 .social {
-    margin: 25px;
+    margin: 15px 25px 25px 25px;
 }
 
 
-/* stackoverflow fix: image too large, reduced, moved up */
+/* stackoverflow fix: image too large, resized(html), moved up(css) */
 .stack {
     margin-bottom: 3px;
 }
@@ -193,6 +371,7 @@ footer {
     margin: 0px -10px 0px -10px;
     font-size: 12px;
 }
+
 
 /* "Copyright 2018 Ivan Saucedo" */
 p.footer {

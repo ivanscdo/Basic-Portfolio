@@ -16,9 +16,11 @@
             
             <!-- header right: navigation box, "About", "Portfolio", "Contact" links -->
             <nav class="allotherfont">
-                <p class="navA">About</p> 
-                <p class="navP">Portfolio</p>
-                <p class="navC">Contact</p>
+                <a href="index.html"><p class="navA">About</p></a>
+                <p class="navdivider">|</p>
+                <a href="portfolio.html"><p class="navP">Portfolio</p></a>
+                <p class="navdivider">|</p>
+                <a href="contact.html"><p class="navC">Contact</p></a>
             </nav>
         </header>
 
@@ -28,16 +30,14 @@
                 <h2 class="headfont fontcolor-main">Contact</h2>
                 <hr class="main">
                 <form>
-                        Name:<br>
-                        <input type="text" name="fullname">
+                        <p class="allotherfont">Name</p>
+                        <input type="text" name="fullname" class="form-name form-font" placeholder="John Smith">
+                        <p class="allotherfont">Email</p>
+                        <input type="text" name="email" class="form-email form-font" placeholder="example@gmail.com">
+                        <p class="allotherfont">Message</p>
+                        <input type="text" name="message" class="form-message form-font">
                         <br>
-                        Email:<br>
-                        <input type="text" name="email">
-                        <br>
-                        Message:<br>
-                        <input type="text" name="message">
-                        <br>
-                        <button>Submit</button>
+                        <button class="allotherfont button">Submit</button>
                 </form>
 
             </section>
@@ -47,9 +47,9 @@
                 <h3 class="headfont fontcolor-main">Connect with Me</h3>
                 <hr class="aside">
                 <section class="social">
-                    <img class="git" src="assets/images/github.png" height="64px" width="64px" alt="github icon and link" />
-                    <img class="linked" src="assets/images/linkedin.png" height="64px" width="64px" alt="linkedin icon and link" />
-                    <img class="stack" src="assets/images/stackoverflow.png" height="58px" width="58px" alt="stackoverflow icon and link" />
+                        <a href="https://github.com/ivanscdo" target="_blank"><img class="git" src="assets/images/github.png" height="70px" width="70px" alt="github icon and link"></a>
+                        <a href="https://www.linkedin.com/in/ivan-saucedo-94272174/" target="_blank"><img class="linked" src="assets/images/linkedin.png" height="70px" width="70px" alt="linkedin icon and link"></a>
+                        <a href="https://stackexchange.com/users/12789137/ivanscdo" target="_blank"><img class="stack" src="assets/images/stackoverflow.png" height="64px" width="64px" alt="stackoverflow icon and link"></a>
                 </section>
             </aside>
         </main> 
